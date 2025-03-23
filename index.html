@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тёмный стиль</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Боковое меню -->
+    <div class="sidebar">
+        <div class="menu">
+            <a href="#" onclick="showSection('home')" class="active">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" fill="currentColor"/>
+                </svg>
+                <span>Главная</span>
+            </a>
+            <a href="#" onclick="showSection('theory')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 22H22L12 2Z" fill="currentColor"/>
+                </svg>
+                <span>Теория</span>
+            </a>
+            <a href="#" onclick="showSection('game')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 22H22L12 2Z" fill="currentColor"/>
+                </svg>
+                <span>Игра</span>
+            </a>
+            <a href="#" onclick="showSection('about')">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 22H22L12 2Z" fill="currentColor"/>
+                </svg>
+                <span>О сайте</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <main>
+        <div class="back-button" onclick="goBack()">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <!-- Секции -->
+        <section id="home" class="content active">
+            <h1>Добро пожаловать!</h1>
+            <p>Этот сайт выполнен в тёмных тонах с минималистичным стилем. Здесь вы найдёте информацию по разным темам.</p>
+        </section>
+
+        <!-- Остальные секции -->
+        ...
+    </main>
+</body>
+</html>
