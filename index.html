@@ -4,7 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Угадай слово</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+	  /* Основные стили */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #131313;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Контейнер */
+.container {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ff6f61;
+  text-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+}
+
+/* Кнопка */
+button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #ff6f61;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #ff4a3d;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Результат */
+.result {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #ff6f61;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Анимация появления */
+.fade-in {
+  opacity: 1;
+}
+  </style>
 </head>
 <body>
   <div class="container">
